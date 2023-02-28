@@ -1,16 +1,17 @@
 # go-practice
 
 放置 GoLang 程式語言相關的練習。
+可以進到各類別的資料夾內，執行各自的 `main.go` 檔的內容。
 
 ## 目錄
 
-### 基礎
+### base (基礎)
 
 - hello-world
 
     程式語言第一堂課都會教的在 Terminal 打印出 Hello world!。
 
-### Command line 相關
+### Command line (命令列相關操作)
 
 - flag
 
@@ -21,7 +22,7 @@
     $ go run main.go -name={your name} -age={your age}
     ```
 
-### Goroutine 相關
+### Goroutine
 
 - mutex
 
@@ -37,6 +38,12 @@
 - rw-mutex
 
     和 `mutex` 一樣是透過模擬銀行來示範，差別在於使用 `RWMutex`，針對讀取動作允許多個 `goroutine` 使用該參數。
+
+### Other
+
+- corn-job
+
+    Corn job 排程的展示，透過每兩秒執行一次及每五秒執行一次，打印出執行當下時間，可以了解排程的運作方式。
 
 ## 參考
 
