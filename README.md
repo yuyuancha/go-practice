@@ -22,6 +22,10 @@
     $ go run main.go -name={your name} -age={your age}
     ```
 
+- progress-bar
+
+    透過 `github.com/schollz/progressbar/v3` 套件，在命令列打印出像是下載東西時的進度條，有多種樣式可以選擇，也可以選擇顯示的文字等。
+
 ### Goroutine
 
 - mutex
