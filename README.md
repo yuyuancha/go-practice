@@ -43,6 +43,36 @@
 
     和 `mutex` 一樣是透過模擬銀行來示範，差別在於使用 `RWMutex`，針對讀取動作允許多個 `goroutine` 使用該參數。
 
+### gRPC
+
+- grpc-example-01
+
+    透過 GoLang 架設一個 `gRPC` 伺服器的範例。
+
+    使用 `protoc --go_out=. --go-grpc_out=. hello.proto` 來快速建立 GoLang 的 `xxx.proto.go` 檔。
+    並且實作 Service 對應方法來使其符合 `interface`。
+
+    如果遇到無法使用 protoc 指令生成 `xxx.proto.go`，需要檢查 `GOPATH` 有沒有放入 `PATH` 內。
+    
+    ```
+    $ vim ~/.bash_profile
+    ```
+
+    新增:
+    ```
+    export PATH="$PATH:$(go env GOPATH)/bin"
+    ```
+
+    新增完畢需要重新啟用:
+    ```
+    $ source ~/.bash_profile
+    ```
+
+    可以透過打印(echo)方式檢查有沒有成功:
+    ```
+    $ echo $PATH
+    ```
+
 ### Other
 
 - corn-job
@@ -52,3 +82,4 @@
 ## 參考
 
 - [Go 簡單例子來理解 sync.Mutex 和 sync.RWMutex](https://clouding.city/go/mutex-rwmutex/)
+- [golang开发一个简单的grpc](https://waterflow.link/articles/1665674508275)
