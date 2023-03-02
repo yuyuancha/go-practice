@@ -73,6 +73,18 @@
     $ echo $PATH
     ```
 
+### Data structure (資料結構)
+
+- array
+
+    展示使用資料結構基礎型態——陣列。
+    並且透過 `for loop` 打印陣列內的所有元素。
+
+- linked-list
+
+    展示使用資料結構基礎型態——鏈結串列。
+    並且透過 `function` 遞迴打印出所有節點。
+
 ### Other
 
 - corn-job
