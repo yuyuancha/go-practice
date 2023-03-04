@@ -26,6 +26,8 @@ func sortBySelection(input []int) []int {
 		if minIndex != i {
 			input[i], input[minIndex] = input[minIndex], input[i]
 		}
+
+		fmt.Printf("i=%d迴圈結果: %v\n", i, input)
 	}
 
 	return input

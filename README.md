@@ -101,7 +101,23 @@
 
     - selection-sort
 
-        實作選擇排序，透過 `for loop` 走訪一遍比較出最小值，並將最小值與目前走訪的節點做替換位置，複雜度為 `O(n^2)`。
+        實作選擇排序，透過 `for loop` 走訪一遍比較出最小值，並將最小值與目前走訪的節點做替換位置，時間複雜度為 `O(n^2)`。
+    
+    - insertion-sort
+
+        實作插入排序，透過比對前面的數，若比之小，則替換位置。比較完最後一個數，即完成排序，時間複雜度為 `O(n^2)`。
+    
+    - bubble-sort
+
+        實作氣泡排序，透過和下一個數字相比，如果比較大則替換。要是一輪都沒有替換位置，表示已經排序完成，可以提早跳出迴圈，時間複雜度為 `O(n^2)`(最佳狀況即只做一輪就完成，複雜度則為 `O(n)`)。
+
+    - quick-sort
+
+        實作快速排序，先選出中樞數字，之後透過分組的方式進行排序。將比較大的分到右邊、較小的分到左邊，接著分別進行排序，接著合併即完成排序，時間複雜度平均為 `O(nLog(n))`(最佳狀況為 `O(nLog(n))`，就是剛好第一個中樞數字為中位數，將資料切二等分。最糟狀況為 `O(n^2)`，就是中樞數字每次都拿到最大或最小值)。
+    
+    - merge-sort
+
+        實作合併排序，先將數字左右邊分類，再分別透過遞迴函式再分類，接著開始往回做比較。比較左右邊的數字，較小的就合併回去，並檢查若有一邊已經合併完，則將另一邊合併回去，即可完成排序，時間複雜度為 `O(nLog(n))`。
 
 ### Other
 
@@ -113,3 +129,4 @@
 
 - [Go 簡單例子來理解 sync.Mutex 和 sync.RWMutex](https://clouding.city/go/mutex-rwmutex/)
 - [golang开发一个简单的grpc](https://waterflow.link/articles/1665674508275)
+- [各種排序法一起跑的影片:Visualization of 24 Sorting Algorithms In 2 Minutes](https://www.youtube.com/watch?v=BeoCbJPuvSE&ab_channel=ViktorBohush)
